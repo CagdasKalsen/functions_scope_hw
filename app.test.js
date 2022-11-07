@@ -6,7 +6,7 @@ const {
     checkPrime,
     printPrimes,
     printLongestWord,
-    eulerFibo, 
+    eulerFibo,
     findNeedle,
     sumPositive
 } = require("./app");
@@ -56,8 +56,7 @@ describe("getTwoLengths() returns an array of numbers where each number is the l
     });
 
     it('["Tiger", "Supercalifragilisticexpialidocious"] should return [5, 34]', () => {
-        expect(getTwoLengths("Tiger", "Supercalifragilisticexpialidocious")
-    ).toEqual([5, 34]);
+        expect(getTwoLengths("Tiger", "Supercalifragilisticexpialidocious")).toEqual([5, 34]);
     });
 });
 
@@ -137,48 +136,48 @@ describe("printLongestWord() returns the longest word in an array", () => {
 
 // 8. eulerFibo
 describe("eulerFibo() takes in a number and finds the sum of even numbers in a fibonacci sequence up to that number", () => {
-    it("eulerFibo is defined", () => {
-        expect(eulerFibo(10)).toBeDefined();
-    });
+            it("eulerFibo is defined", () => {
+                    expect(eulerFibo(10).toBeDefined();
+                    });
 
-    it("even numbers up to 10 are [2, 8] and should return the sum of 10", () => {
-        expect(eulerFibo(10)).toEqual(10);
-    });
+                it("even numbers up to 10 are [2, 8] and should return the sum of 10", () => {
+                    expect(eulerFibo(10)).toEqual(10);
+                });
 
-    it("even numbers up to 100 are [2, 8, 34] and should return the sum of 44", () => {
-        expect(eulerFibo(100)).toEqual(44);
-    });
+                it("even numbers up to 100 are [2, 8, 34] and should return the sum of 44", () => {
+                    expect(eulerFibo(100)).toEqual(44);
+                });
 
-    it("even numbers up to 1000 are [2, 8, 34, 144, 610] and should return the sum of 798", () => {
-        expect(eulerFibo(1000)).toEqual(798);
-    });
-});
+                it("even numbers up to 1000 are [2, 8, 34, 144, 610] and should return the sum of 798", () => {
+                    expect(eulerFibo(1000)).toEqual(798);
+                });
+            });
 
-// 9. findNeedle
-describe("findNeedle() returns 'Found the needle at position ${index}'", () => {
-    expect(findNeedle(["needle", "test"])).toBeDefined();
+        // 9. findNeedle
+        describe("findNeedle() returns 'Found the needle at position ${index}'", () => {
+            expect(findNeedle(["needle", "test"])).toBeDefined();
 
-    it("['needle', 'in', 'haystack'] should return 'found the needle at position 0'", () => {
-        expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
-        expect(findNeedle(["needle", "in", "haystack"])).toBe("found the needle at position 0");
-    });
+            it("['needle', 'in', 'haystack'] should return 'found the needle at position 0'", () => {
+                expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
+                expect(findNeedle(["needle", "in", "haystack"])).toBe("found the needle at position 0");
+            });
 
-    it("['found', 'the', 'needle'] should return 'found the needle at position 2'", () => {
-        expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
-        expect(findNeedle(["found", "the", "needle"])).toBe("found the needle at position 2");
-    });
-});
+            it("['found', 'the', 'needle'] should return 'found the needle at position 2'", () => {
+                expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
+                expect(findNeedle(["found", "the", "needle"])).toBe("found the needle at position 2");
+            });
+        });
 
-// 10. sumPositive
-describe("sumPositive() returns the sum of only the positive numbers in an array", () => {
-    
-    expect(sumPositive([1, -1])).toBeDefined();
+        // 10. sumPositive
+        describe("sumPositive() returns the sum of only the positive numbers in an array", () => {
 
-    it("[1, -4, 7, 12] should return 20", () => {
-        expect(sumPositive([1, -4, 7, 12])).toEqual(20);
-    });
+            expect(sumPositive([1, -1])).toBeDefined();
 
-    it("[-1, 28, -24, 15] should return 43", () => {
-        expect(sumPositive([-1, 28, -24, 15])).toEqual(43);
-    });
-});
+            it("[1, -4, 7, 12] should return 20", () => {
+                expect(sumPositive([1, -4, 7, 12])).toEqual(20);
+            });
+
+            it("[-1, 28, -24, 15] should return 43", () => {
+                expect(sumPositive([-1, 28, -24, 15])).toEqual(43);
+            });
+        });
